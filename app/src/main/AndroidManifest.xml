@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="delilah.personal.inumapus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <application
+        android:name="delilah.personal.inumapus.network.NetworkController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_mapus"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_mapus_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="67eea3a57b2cfd8d621c5f01c190b20e" />
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".FirstActivity" />
+
+        <activity android:name=".PhoneBookActivity" />
+
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".BuildingActivity" />
+
+        <activity android:name=".FloorActivity" />
+
+        <activity android:name=".OfficeActivity" />
+
+        <activity android:name=".EmployeeActivity" />
+
+        <activity android:name=".EtcActivity" />
+
+    </application>
+
+</manifest>

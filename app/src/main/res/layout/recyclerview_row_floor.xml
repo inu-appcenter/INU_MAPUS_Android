@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/recycler_view_row_padding">
+
+    <TextView
+        android:id="@+id/floorNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum_square_round_b"
+        android:text="@string/floor"
+        android:textColor="@color/bold"
+        android:textSize="15sp" />
+
+</LinearLayout>

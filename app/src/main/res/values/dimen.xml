@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen tools:override="true" name="fab_size">45dp</dimen>
+    <dimen tools:override="true" name="fab_icon_size">20dp</dimen>
+    <dimen tools:override="true" name="fab_text_size_three">30dp</dimen>
+
+    <dimen name="recycler_view_row_padding">20dp</dimen>
+    <dimen name="employee_row_padding">10dp</dimen>
+
+    <dimen name="between_icon_margin">10dp</dimen>
+    <dimen name="between_text_margin">10dp</dimen>
+
+    <dimen name="employee_text_margin">6dp</dimen>
+    <dimen name="employee_gap_margin">5dp</dimen>
+    <dimen name="employee_margin_start">15dp</dimen>
+    <dimen name="office_margin">15dp</dimen>
+
+    <dimen name="button_width">34dp</dimen>
+    <dimen name="button_height">34dp</dimen>
+    <dimen name="button_margin_end">15dp</dimen>
+
+    <dimen name="room_id_width">60dp</dimen>
+
+    <dimen name="name_font_size">15sp</dimen>
+    <dimen name="position_font_size">11sp</dimen>
+
+    <dimen name="line_space">0.35</dimen>
+
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">INUMapus</string>
+    <string name="APP_KEY">67eea3a57b2cfd8d621c5f01c190b20e</string>
+
+    <string name="splash_small">인천대학교건물정보\u0026기관에대한모든것!</string>
+
+    <string name="first_info">인천대학교의 구조를 모르는 외부인과 새내기를 위한 위치정보!\n그리고 학교기관의 전화번호를 찾을 수 있는 전화번호부 기능까지!\nMAP과 CAMPUS의 두가지 기능을 갖춘 MAPUS는 인천대학교를\n이용하는 사람들에게 필요한 정보를 제공하는 어플리케이션입니다.</string>
+    <string name="marker_info">파란색 필터버튼을 누른 후\n특정 카테고리 버튼을\n누르면 필요한 장소만\n지도에 표시 됩니다.</string>
+
+    <string name="search_main">각 건물별 상세 정보를 확인하세요</string>
+    <string name="search_office">사무실 이름 또는 호수로 검색하세요</string>
+    <string name="search_phone">이름 또는 전화번호로 검색하세요</string>
+
+    <string name="building_name">건물 이름</string>
+    <string name="building_number">1호관</string>
+
+    <string name="between">l</string>
+
+    <string name="organ">학과 이름</string>
+    <string name="position">직위</string>
+    <string name="name">홍길동</string>
+    <string name="number">l 010–1234–5678</string>
+    <string name="email">sample123@appcenter.com</string>
+
+    <string name="floor">1층</string>
+    <string name="floor_etc">부서 외 교직원</string>
+
+    <string name="room_id">B101</string>
+    <string name="room_title">종합상황실</string>
+
+    <string name="message_none">소속된 교직원이 없습니다</string>
+</resources>

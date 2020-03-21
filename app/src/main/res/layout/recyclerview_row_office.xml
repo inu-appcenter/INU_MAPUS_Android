@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/recycler_view_row_padding"
+    android:paddingBottom="@dimen/recycler_view_row_padding">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="@dimen/room_id_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/office_margin"
+        android:fontFamily="@font/nanum_square_round_b"
+        android:gravity="end"
+        android:text="@string/room_id"
+        android:textColor="@color/light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum_square_round_b"
+        android:text="@string/room_title"
+        android:textColor="@color/bold"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_call_page"
+        android:state_pressed="true">
+
+        <shape android:shape="oval">
+
+            <size android:width="@dimen/button_width" android:height="@dimen/button_height" />
+
+            <gradient android:angle="270" android:endColor="@color/endColor" android:startColor="@color/startColor" />
+
+        </shape>
+
+    </item>
+
+    <item android:drawable="@drawable/btn_call_page">
+
+        <shape android:shape="oval">
+
+            <size android:width="@dimen/button_width" android:height="@dimen/button_height" />
+
+        </shape>
+
+    </item>
+
+
+</selector>
