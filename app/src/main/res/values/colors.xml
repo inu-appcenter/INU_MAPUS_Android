@@ -9,6 +9,7 @@
     <color name="colorFilter">#41a5f2</color>
     <color name="line">#999999</color>
     <color name="background">#989898</color>
+    <color name="firstBackground">#99000000</color>
     <color name="bold">#535353</color>
     <color name="light">#898989</color>
     <color name="endColor">#cdcdcd</color>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#99000000"/>
+        android:background="@color/firstBackground" />
 
     <LinearLayout
         android:id="@+id/first_search_bar"
@@ -22,14 +23,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="20dp"
-            android:src="@drawable/logo_small" />
+            android:src="@drawable/logo_small"
+            tools:ignore="ContentDescription" />
 
-        <EditText
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@null"
-            android:hint="소속 또는 이름을 입력하세요" />
+            android:layout_gravity="center_vertical"
+            android:hint="@string/search_main" />
 
     </LinearLayout>
 
@@ -37,11 +38,11 @@
         android:id="@+id/btn_x"
         android:layout_width="35dp"
         android:layout_height="36dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="5dp"
         android:layout_below="@+id/first_search_bar"
         android:layout_alignEnd="@+id/first_search_bar"
-        android:background="@drawable/btn_x"/>
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/btn_x" />
 
     <ImageView
         android:id="@+id/first_logo"
@@ -49,9 +50,10 @@
         android:layout_height="45dp"
         android:layout_below="@+id/first_search_bar"
         android:layout_alignStart="@+id/first_search_bar"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="40dp"
-        android:src="@drawable/img_logo" />
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/img_logo"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/first_info"
@@ -84,7 +86,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_marker" />
+                android:src="@drawable/ic_marker"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -105,13 +108,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_mylocation" />
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_mylocation"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|left"
+                android:layout_gravity="center_vertical|start"
                 android:text="현재위치"
                 android:textColor="@color/milkWhite"
                 android:textSize="15sp" />
@@ -137,9 +141,9 @@
         android:layout_below="@+id/first_tv_marker"
         android:layout_alignStart="@+id/first_tv_marker"
         android:layout_marginTop="10dp"
+        android:lineSpacingExtra="4sp"
         android:text="@string/marker_info"
         android:textColor="@color/milkWhite"
-        android:lineSpacingExtra="4sp"
         android:textSize="8sp" />
 
     <GridLayout
@@ -153,8 +157,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
-            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="5dp"
             android:text="현재위치"
             android:textColor="@color/milkWhite" />
 
@@ -162,13 +166,14 @@
             android:id="@+id/btn_mylocation"
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:background="@drawable/first_mylocation" />
+            android:background="@drawable/first_mylocation"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|right"
-            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="5dp"
             android:text="전화번호부"
             android:textColor="@color/milkWhite" />
 
@@ -176,7 +181,8 @@
             android:id="@+id/btn_call"
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:background="@drawable/first_call" />
+            android:background="@drawable/first_call"
+            tools:ignore="ContentDescription" />
 
     </GridLayout>
 
@@ -186,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
         android:gravity="center_vertical">
 
@@ -194,35 +200,40 @@
             android:id="@+id/first_retiringroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/first_retiringroom" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/first_retiringroom"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/first_cafe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/first_cafe" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/first_cafe"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/first_restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/first_restaurant" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/first_restaurant"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/first_conveniencestore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/first_conveniencestore" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/first_conveniencestore"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/first_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/first_filter" />
+            android:src="@drawable/first_filter"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
 
