@@ -389,7 +389,6 @@ public class MainActivity extends AppCompatActivity implements MapView.CurrentLo
                     marker.setCustomImageAutoscale(false);
                     mapView.addPOIItem(marker);
                 }
-
             }
 
             @Override

@@ -1,240 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/firstBackground">
+
+<LinearLayout
+    android:id="@+id/first_search_bar"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/firstBackground" />
-
-    <LinearLayout
-        android:id="@+id/first_search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/search_background">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="20dp"
-            android:src="@drawable/logo_small"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:hint="@string/search_main" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_x"
-        android:layout_width="35dp"
-        android:layout_height="36dp"
-        android:layout_below="@+id/first_search_bar"
-        android:layout_alignEnd="@+id/first_search_bar"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/btn_x" />
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/search_background"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
-        android:id="@+id/first_logo"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/first_search_bar"
-        android:layout_alignStart="@+id/first_search_bar"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:src="@drawable/logo_small"
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/first_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/first_logo"
-        android:layout_alignStart="@+id/first_logo"
-        android:layout_marginTop="15dp"
-        android:text="@string/first_info"
-        android:textColor="@color/lightBlue"
-        android:textSize="10sp" />
+        android:layout_gravity="center_vertical"
+        android:hint="@string/search_main" />
 
-    <LinearLayout
-        android:id="@+id/linear_middle"
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_x"
+    android:layout_width="35dp"
+    android:layout_height="36dp"
+    android:layout_below="@+id/first_search_bar"
+    android:layout_alignEnd="@+id/first_search_bar"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="5dp"
+    android:background="@drawable/btn_x"
+    app:layout_constraintEnd_toEndOf="@+id/first_search_bar"
+    app:layout_constraintTop_toBottomOf="@+id/first_search_bar" />
+
+<ImageView
+    android:id="@+id/first_logo"
+    android:layout_width="150dp"
+    android:layout_height="45dp"
+    android:layout_below="@+id/btn_x"
+    android:layout_alignStart="@+id/first_search_bar"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/img_logo"
+    app:layout_constraintStart_toStartOf="@+id/first_search_bar"
+    app:layout_constraintTop_toBottomOf="@+id/first_search_bar"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/first_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/first_logo"
+    android:layout_alignStart="@+id/first_logo"
+    android:layout_marginTop="15dp"
+    android:text="@string/first_info"
+    android:textColor="@color/lightBlue"
+    android:textSize="10sp"
+    app:layout_constraintStart_toStartOf="@+id/first_logo"
+    app:layout_constraintTop_toBottomOf="@+id/first_logo" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|end"
+    android:text="현재위치"
+    android:textColor="@color/milkWhite"
+    app:layout_constraintBottom_toBottomOf="@+id/btn_mylocation"
+    app:layout_constraintEnd_toEndOf="@+id/textView5"
+    app:layout_constraintTop_toTopOf="@+id/btn_mylocation" />
+
+<ImageView
+    android:id="@+id/btn_mylocation"
+    android:layout_width="52dp"
+    android:layout_height="52dp"
+    android:layout_row="0"
+    android:background="@drawable/first_mylocation"
+    app:layout_constraintBottom_toTopOf="@+id/btn_call"
+    app:layout_constraintEnd_toEndOf="@+id/btn_call"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|end"
+    android:layout_marginEnd="5dp"
+    android:text="전화번호부"
+    android:textColor="@color/milkWhite"
+    app:layout_constraintBottom_toBottomOf="@+id/btn_call"
+    app:layout_constraintEnd_toStartOf="@+id/btn_call"
+    app:layout_constraintTop_toTopOf="@+id/btn_call" />
+
+<ImageView
+    android:id="@+id/btn_call"
+    android:layout_width="52dp"
+    android:layout_height="52dp"
+    android:background="@drawable/first_call"
+    app:layout_constraintBottom_toTopOf="@+id/first_filter"
+    app:layout_constraintEnd_toEndOf="@+id/first_filter"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/first_all"
+    app:layout_constraintBottom_toBottomOf="@+id/first_retiringroom"
+    app:layout_constraintEnd_toStartOf="@+id/first_retiringroom"
+    app:layout_constraintTop_toTopOf="@+id/first_retiringroom"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_retiringroom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/first_retiringroom"
+    app:layout_constraintBottom_toBottomOf="@+id/first_cafe"
+    app:layout_constraintEnd_toStartOf="@+id/first_cafe"
+    app:layout_constraintTop_toTopOf="@+id/first_cafe"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_cafe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/first_cafe"
+    app:layout_constraintBottom_toBottomOf="@+id/first_restaurant"
+    app:layout_constraintEnd_toStartOf="@+id/first_restaurant"
+    app:layout_constraintTop_toTopOf="@+id/first_restaurant"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_restaurant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/first_restaurant"
+    app:layout_constraintBottom_toBottomOf="@+id/first_conveniencestore"
+    app:layout_constraintEnd_toStartOf="@+id/first_conveniencestore"
+    app:layout_constraintTop_toTopOf="@+id/first_conveniencestore"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_conveniencestore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/first_conveniencestore"
+    app:layout_constraintBottom_toBottomOf="@+id/first_filter"
+    app:layout_constraintEnd_toStartOf="@+id/first_filter"
+    app:layout_constraintTop_toBottomOf="@+id/btn_call"
+    tools:ignore="ContentDescription" />
+
+<ImageView
+    android:id="@+id/first_filter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:src="@drawable/first_filter"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/btn_x"
+    tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/first_info"
-        android:layout_alignStart="@+id/first_search_bar"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/line"
+        app:layout_constraintBottom_toTopOf="@+id/first_all"
+        app:layout_constraintEnd_toEndOf="@+id/first_all"
+        app:layout_constraintStart_toStartOf="@+id/first_info"
+        tools:ignore="ContentDescription" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/ic_marker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:src="@drawable/ic_marker"
+    app:layout_constraintBottom_toTopOf="@+id/ic_mylocation"
+    app:layout_constraintStart_toStartOf="@+id/ic_mylocation"
+    tools:ignore="ContentDescription" />
 
-            <ImageView
-                android:id="@+id/ic_marker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_marker"
-                tools:ignore="ContentDescription" />
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="장소표시"
+    android:textColor="@color/milkWhite"
+    android:textSize="15sp"
+    app:layout_constraintBottom_toBottomOf="@+id/ic_marker"
+    app:layout_constraintStart_toStartOf="@+id/textView3"
+    app:layout_constraintTop_toTopOf="@+id/ic_marker" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|left"
-                android:text="장소표시"
-                android:textColor="@color/milkWhite"
-                android:textSize="15sp" />
+<ImageView
+    android:id="@+id/ic_mylocation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/ic_mylocation"
+    app:layout_constraintBottom_toTopOf="@+id/line"
+    app:layout_constraintStart_toStartOf="@+id/line"
+    tools:ignore="ContentDescription" />
 
-        </LinearLayout>
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|start"
+    android:layout_marginStart="10dp"
+    android:text="현재위치"
+    android:textColor="@color/milkWhite"
+    android:textSize="15sp"
+    app:layout_constraintBottom_toBottomOf="@+id/ic_mylocation"
+    app:layout_constraintStart_toEndOf="@+id/ic_mylocation"
+    app:layout_constraintTop_toTopOf="@+id/ic_mylocation" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/first_tv_marker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="마커필터"
+    android:textColor="@color/milkWhite"
+    android:textSize="15sp"
+    app:layout_constraintStart_toStartOf="@+id/textView3"
+    app:layout_constraintTop_toBottomOf="@+id/ic_mylocation" />
 
-            <ImageView
-                android:id="@+id/ic_mylocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/ic_mylocation"
-                tools:ignore="ContentDescription" />
+<TextView
+    android:id="@+id/markerDesc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/first_tv_marker"
+    android:layout_alignStart="@+id/first_tv_marker"
+    android:layout_marginTop="10dp"
+    android:lineSpacingExtra="4sp"
+    android:text="@string/marker_info"
+    android:textColor="@color/milkWhite"
+    android:textSize="8sp"
+    app:layout_constraintStart_toStartOf="@+id/first_tv_marker"
+    app:layout_constraintTop_toBottomOf="@+id/first_tv_marker" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|start"
-                android:text="현재위치"
-                android:textColor="@color/milkWhite"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/first_tv_marker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linear_middle"
-        android:layout_alignEnd="@+id/linear_middle"
-        android:layout_marginTop="10dp"
-        android:text="마커필터"
-        android:textColor="@color/milkWhite"
-        android:textSize="15sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/first_tv_marker"
-        android:layout_alignStart="@+id/first_tv_marker"
-        android:layout_marginTop="10dp"
-        android:lineSpacingExtra="4sp"
-        android:text="@string/marker_info"
-        android:textColor="@color/milkWhite"
-        android:textSize="8sp" />
-
-    <GridLayout
-        android:id="@+id/grid_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linear_filter"
-        android:layout_alignEnd="@+id/linear_filter"
-        android:columnCount="2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|end"
-            android:layout_marginEnd="5dp"
-            android:text="현재위치"
-            android:textColor="@color/milkWhite" />
-
-        <ImageView
-            android:id="@+id/btn_mylocation"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:background="@drawable/first_mylocation"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|end"
-            android:layout_marginEnd="5dp"
-            android:text="전화번호부"
-            android:textColor="@color/milkWhite" />
-
-        <ImageView
-            android:id="@+id/btn_call"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:background="@drawable/first_call"
-            tools:ignore="ContentDescription" />
-
-    </GridLayout>
-
-    <LinearLayout
-        android:id="@+id/linear_filter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center_vertical">
-
-        <ImageView
-            android:id="@+id/first_retiringroom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/first_retiringroom"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/first_cafe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/first_cafe"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/first_restaurant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/first_restaurant"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/first_conveniencestore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/first_conveniencestore"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/first_filter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/first_filter"
-            tools:ignore="ContentDescription" />
-
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

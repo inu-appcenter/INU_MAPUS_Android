@@ -140,7 +140,7 @@
         android:layout_marginEnd="@dimen/between_icon_margin"
         android:layout_toStartOf="@+id/buttonConv"
         android:backgroundTint="@color/milkWhite"
-
+        android:src="@drawable/btn_filter_all"
         android:visibility="invisible"
         app:borderWidth="0dp"
         app:fabCustomSize="@dimen/fab_size"
