@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="delilah.personal.inumapus">
+    package="com.appcenter.inumapus">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.DIAL_PHONE" />
 
     <application
-        android:name="delilah.personal.inumapus.network.NetworkController"
+        android:name="com.appcenter.inumapus.network.NetworkController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_mapus"
         android:label="@string/app_name"
@@ -22,7 +22,7 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="67eea3a57b2cfd8d621c5f01c190b20e" />
 
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.appcenter.inumapus.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,21 +30,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FirstActivity" />
+        <activity android:name="com.appcenter.inumapus.FirstActivity" />
 
-        <activity android:name=".PhoneBookActivity" />
+        <activity android:name="com.appcenter.inumapus.PhoneBookActivity" />
 
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.appcenter.inumapus.MainActivity" />
 
-        <activity android:name=".BuildingActivity" />
+        <activity android:name="com.appcenter.inumapus.BuildingActivity" />
 
-        <activity android:name=".FloorActivity" />
+        <activity android:name="com.appcenter.inumapus.FloorActivity" />
 
-        <activity android:name=".OfficeActivity" />
+        <activity android:name="com.appcenter.inumapus.OfficeActivity" />
 
-        <activity android:name=".EmployeeActivity" />
+        <activity android:name="com.appcenter.inumapus.EmployeeActivity" />
 
-        <activity android:name=".EtcActivity" />
+        <activity android:name="com.appcenter.inumapus.EtcActivity" />
 
     </application>
 
